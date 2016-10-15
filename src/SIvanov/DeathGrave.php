@@ -27,4 +27,13 @@ class DeathGrave extends PluginBase implements Listener{
     $p->getLevel()->addParticle(new SmokeParicle(new Vector3($x, $y +1, $z)));
  //TO DO
   }
+  public function onBreak(BlockBreakEvent $e){
+    $p = $e->getPlayer();
+    if($e->getBlock()->getId() == 246){
+      $i = array(311, 322, 272);
+      $random = $i[array_rand($i)];
+      $item = new Item($random,0,1);
+      $e->setDrops(array($item));
+    }
+  }
 }
