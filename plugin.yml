@@ -1,1 +1,6 @@
-name
+name: DeathGrave
+version: 1.0
+api: 2.0.0
+main: SIvanov\DeathGrave
+author: SergeyIvanov
+website: vk.com/thebaldcool
