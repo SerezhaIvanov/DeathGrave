@@ -23,6 +23,8 @@ class DeathGrave extends PluginBase implements Listener{
     $x = $p->getX();
     $y = $p->getY();
     $z = $p->getZ();
+    $this->getServer()->getLevelByName("world")->setBlockIdAt($x, $y, $z, 246);
+    $p->getLevel()->addParticle(new SmokeParicle(new Vector3($x, $y +1, $z)));
  //TO DO
   }
 }
