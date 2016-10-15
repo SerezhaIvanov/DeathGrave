@@ -9,6 +9,8 @@ use pocketmine\event\player\PlayerRespawnEvent;
 use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\level\sound\ZombieInfectSound;
 use pocketmine\level\particle\SmokeParticle;
+use pocketmine\item\Item;
+use pocketmine\math\Vector3;
 
 class DeathGrave extends PluginBase implements Listener{
   public function onEnable(){
